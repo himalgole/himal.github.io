@@ -351,7 +351,7 @@ nav a:hover {
     .mbl-social-links {
         display: flex;
         justify-content: space-around;
-        padding: 5px 100px;
+        padding: 5px 70px;
     }
 
     .home p {
