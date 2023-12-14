@@ -276,6 +276,17 @@ nav a:hover {
     background-color: #141316;
     margin-left: 150px;
     margin-top: 60px;
+    padding: 10px 50px;
+}
+.footer-nav
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-nav a
+{
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 .mbl-footer {
