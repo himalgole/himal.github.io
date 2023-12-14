@@ -75,6 +75,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+.header-animated
+{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .brand {
@@ -137,21 +144,35 @@ nav a:hover {
     font-size: 22px;
     letter-spacing: 2px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translateY(60px);
+    opacity: 0;
 }
 
 .home {
     padding-top: 100px;
     padding-left: 150px;
+    z-index: 999;
 }
 
 .home h2 {
     color: aliceblue;
     font-size: 80px;
+    transition-delay: .6s;
+    transform: translateY(50px);
+    opacity: 0;
 }
 
 .home h3 {
     color: #e9e9e9;
     font-size: 80px;
+    transition-delay: 1s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+.p1-animate,.h2-animate,.h3-animate
+{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }
 
 .bio {
@@ -162,8 +183,14 @@ nav a:hover {
 .bio p {
     /* color: aliceblue; */
     color: #e9e9e9;
-
+    transform: translateY(60px);
+    opacity: o;
     padding-top: 15px;
+}
+.p-animate
+{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }
 
 .menu-icon {
@@ -181,6 +208,11 @@ nav a:hover {
     padding-right: 50px;
     /* background-color: red; */
 
+}
+.desc p
+{
+    color: #fff;
+    font-size: 18px;
 }
 
 .project h2 {
@@ -202,7 +234,7 @@ nav a:hover {
 
 .about {
     margin-top: 150px;
-    height: 600px;
+    /* height: 600px; */
     width: 100%;
     padding-left: 150px;
     padding-right: 50px;
@@ -243,6 +275,7 @@ nav a:hover {
     width: calc(100% - 150px);
     background-color: #141316;
     margin-left: 150px;
+    margin-top: 60px;
 }
 
 .mbl-footer {
@@ -299,17 +332,19 @@ nav a:hover {
     {
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
     }
     .footer-nav a 
     {
         text-decoration: none;
         color: #fff;
         margin-top: 5px;
-        font-size: 22px;
+        font-size: 17px;
     }
     .mbl-footer {
+        margin-top: 60px;
         display: block;
-        padding: 20px 15px;
+        padding: 20px 25px;
         background-color: #141316;
     }
 
@@ -352,6 +387,10 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .image-container
+    {
+        margin-top: 80px;
     }
 
     .footer {
@@ -443,4 +482,27 @@ nav a:hover {
         }
     }
 
+}
+
+@media(max-width:700px)
+{
+    .home p {
+        font-size: 18px;
+    }
+
+    .home h2 {
+        color: aliceblue;
+        font-size: 50px;
+    }
+
+    .home h3 {
+        font-size: 45px;
+    }
+    .home,
+    .about,
+    .project {
+        padding-left: 15px;
+        padding-right: 15px;
+        /* background-color: red; */
+    }
 }
