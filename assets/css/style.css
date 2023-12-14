@@ -368,7 +368,8 @@ nav a:hover {
     }
 
     .fine-edge {
-        padding-left: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .home,
@@ -410,13 +411,14 @@ nav a:hover {
         width: 200px;
         background-color: #6b27b4;
         position: fixed;
+        display: flex;
         top: 0;
         right: 0;
-        display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: 10px 15px;
         transform: translateX(300px);
+        z-index: 9999999;
     }
 
     .mbl-nav a {
