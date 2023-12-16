@@ -25,3 +25,12 @@ function hide_mbl_nav()
 {
     document.querySelector(".mbl-nav").classList.remove("show-up-nav");
 }
+
+
+var swap_right = document.querySelectorAll(".swap-right");
+window.addEventListener("scroll",()=>{
+    swap_right.forEach(item =>{
+        if(item.getBoundingClientRect().top < 0.8*h)
+        item.classList.add("swap-right-activate")
+    })
+})
