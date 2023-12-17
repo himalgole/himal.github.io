@@ -28,9 +28,14 @@ function hide_mbl_nav()
 
 
 var swap_right = document.querySelectorAll(".swap-right");
+var swap_left = document.querySelectorAll(".swap-left");
 window.addEventListener("scroll",()=>{
     swap_right.forEach(item =>{
         if(item.getBoundingClientRect().top < 0.8*h)
         item.classList.add("swap-right-activate")
+    })
+    swap_left.forEach(item =>{
+        if(item.getBoundingClientRect().top < 0.8*h)
+        item.classList.add("swap-left-activate")
     })
 })

@@ -216,10 +216,20 @@ nav a:hover {
 }
 .swap-right
 {
-    transform: translateX(-100px);
+    transform: translateX(-500px);
     opacity: 0;
 }
 .swap-right-activate
+{
+    transform: translateX(0);
+    opacity: 1;
+}
+.swap-left
+{
+    transform: translateX(500px);
+    opacity: 0;
+}
+.swap-left-activate
 {
     transform: translateX(0);
     opacity: 1;
@@ -239,10 +249,20 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 200px;
 }
-.prj p
+.prj-desc h2
+{
+    margin-bottom: 20px;
+}
+.prj img
+{
+    background-blend-mode: darken;
+}
+.prj-desc p
 {
     color: #e9e9e9;
+    font-size: 18px;
 }
 
 .about {
@@ -366,6 +386,19 @@ nav a:hover {
 }
 
 @media(max-width:950px) {
+    .prj img 
+    {
+        width: 400px;
+    }
+    .prj
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .prj .prj-desc
+    {
+        margin-top: 50px;
+    }
     .footer-nav
     {
         display: flex;
@@ -447,7 +480,8 @@ nav a:hover {
     .mbl-nav {
         height: 100vh;
         width: 200px;
-        background-color: #6b27b4;
+        background-color: rgb(190, 21, 242);
+        
         position: fixed;
         display: flex;
         top: 0;
@@ -526,6 +560,10 @@ nav a:hover {
 
 @media(max-width:700px)
 {
+    .prj img 
+    {
+        width: 350px;
+    }
     .home p {
         font-size: 18px;
     }
